@@ -1,11 +1,3 @@
-"""
-Utilities:
-- problem-type detection (classification vs regression)
-- rare-class handling
-- metrics for both modes
-- standardized CSV logging
-- clear leaderboard (mode-aware)
-"""
 import os
 from datetime import datetime
 

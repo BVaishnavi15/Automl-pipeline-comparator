@@ -1,7 +1,3 @@
-#!/usr/bin/env python3
-"""
-AutoML Pipeline Comparator — Universal (Classification + Regression)
-"""
 import argparse
 import os
 from datetime import datetime

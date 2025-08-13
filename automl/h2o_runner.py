@@ -1,9 +1,3 @@
-"""
-H2O runner (init is handled in main)
-- Auto-detects problem type
-- Correctly treats target as factor (classification) or numeric (regression)
-- Computes appropriate metrics
-"""
 import os
 import time
 from datetime import datetime

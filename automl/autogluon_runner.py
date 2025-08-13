@@ -1,9 +1,3 @@
-"""
-AutoGluon runner (DataFrame-based, no temp CSVs)
-- Auto-detects problem type
-- Handles rare classes (fallback to non-stratified split if needed)
-- Computes proper metrics for classification/regression
-"""
 import os
 import time
 from datetime import datetime
