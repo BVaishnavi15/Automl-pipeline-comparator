@@ -16,11 +16,10 @@ Regression: RMSE, MAE, R²
 
 
 ### Why Use This Tool
-Real-world ML often requires comparing multiple AutoML frameworks to determine
+This tool automates these comparisons and produces a clear leaderboard, saving hours of manual work. Real-world ML often requires comparing multiple AutoML frameworks to determine
 1. Which framework works best for small vs large datasets.
 2. How performance changes with different presets or hyperparameter tuning.
 3. Which approach is reproducible and reliable under time constraints.
-This tool automates these comparisons and produces a clear leaderboard, saving hours of manual work.
 
 
 ### Features
