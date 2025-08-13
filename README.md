@@ -55,7 +55,7 @@ Regression metric support
 
 
 ### Terminal Commands Usage
-1. python main.py --data data/train.csv --target target_column--frameworks autogluon h2o --time_limit 300--ag_preset best --ag_hpo--save_models
+* python main.py --data data/train.csv --target target_column--frameworks autogluon h2o --time_limit 300--ag_preset best --ag_hpo--save_models
 ###### --data: Path to dataset CSV
 ###### --target: Target/label column
 ###### --frameworks: Space-separated frameworks to run (default: all supported)
