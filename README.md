@@ -70,9 +70,9 @@ Regression metric support
 
 
 
-1. (Train Models)
+1. (Train Models)=
 python main.py --train path/to/train.csv --label target_column --frameworks autogluon h2o --time_limit 300
-2. (Show Leaderboard)
+2. (Show Leaderboard)=
 python main.py --leaderboard
 3. (Evaluate on Test Dataset(Load an already trained model and evaluate it on a new dataset.))=
 python main.py --evaluate path/to/test.csv --label target_column --framework autogluon
