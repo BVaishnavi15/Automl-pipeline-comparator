@@ -16,10 +16,10 @@ Regression: RMSE, MAE, R²
 
 
 ### Why Use This Tool
-###### Real-world ML often requires comparing multiple AutoML frameworks to determine:
-Which framework works best for small vs large datasets.
-How performance changes with different presets or hyperparameter tuning.
-Which approach is reproducible and reliable under time constraints.
+Real-world ML often requires comparing multiple AutoML frameworks to determine
+1. Which framework works best for small vs large datasets.
+2. How performance changes with different presets or hyperparameter tuning.
+3. Which approach is reproducible and reliable under time constraints.
 This tool automates these comparisons and produces a clear leaderboard, saving hours of manual work.
 
 
@@ -71,24 +71,24 @@ Regression metric support
 
 
 
-1. Train Models
+1. (Train Models)
 python main.py --train path/to/train.csv --label target_column --frameworks autogluon h2o --time_limit 300
-2. Show Leaderboard
+2. (Show Leaderboard)
 python main.py --leaderboard
-3. Evaluate on Test Dataset(Load an already trained model and evaluate it on a new dataset.)
+3. (Evaluate on Test Dataset(Load an already trained model and evaluate it on a new dataset.))=
 python main.py --evaluate path/to/test.csv --label target_column --framework autogluon
-4. Cross-Validation(Run k-fold cross-validation.)
+4. (Cross-Validation(Run k-fold cross-validation.))=
 python main.py --train data/train.csv --label target --frameworks autogluon h2o --cv 5
-5. Export Best Model(Save the best-performing model for deployment.)
+5. (Export Best Model(Save the best-performing model for deployment.))=
 python main.py --export best_model --framework autogluon
-6. Detailed Run Log
+6. (Detailed Run Log)=
 python main.py --log_run 2025-08-12T18:02:03
-7. Delete Results
+7. (Delete Results)=
 python main.py --clear_results
 python main.py --delete_run 2025-08-12T18:02:03
-8. Dataset Summary
+8. (Dataset Summary)=
 python main.py --summary data/train.csv
-9. Parallel Execution
+9. (Parallel Execution)=
 python main.py --train data/train.csv --label target --frameworks autogluon h2o --time_limit 300 --parallel
 
 
