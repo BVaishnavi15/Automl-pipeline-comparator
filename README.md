@@ -65,7 +65,7 @@ Regression metric support
 7. Use logging module instead of print statements (--verbose flag)
 8. Generate bar charts for leaderboard comparison
 
-
+### Commands
 1. python main.py --frameworks autogluon h2o --data "C:/Users/Vaishnavi B/OneDrive/Desktop/AutoML/automl-pipeline-comparator/data/mydataset.csv" --target Survived
 2. python main.py --data data/mydataset.csv --target Survived--frameworks autogluon h2o --time_limit 300 --ag_preset best --ag_hpo --save_models
 
