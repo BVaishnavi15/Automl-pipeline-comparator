@@ -16,7 +16,7 @@ Regression: RMSE, MAE, R²
 
 
 ### Why Use This Tool
-This tool automates these comparisons and produces a clear leaderboard, saving hours of manual work. Real-world ML often requires comparing multiple AutoML frameworks to determine
+This tool automates comparisons and produces a clear leaderboard, saving hours of manual work. Real-world ML often requires comparing multiple AutoML frameworks to determine
 1. Which framework works best for small vs large datasets.
 2. How performance changes with different presets or hyperparameter tuning.
 3. Which approach is reproducible and reliable under time constraints.
@@ -54,17 +54,7 @@ Regression metric support
 | **CSV**          | Persistent benchmark results                          |
 
 
-### Future Enhancements
-1. Add more frameworks: TPOT, Auto-sklearn, FLAML
-2. Support more metrics via --metric accuracy/f1/auc/rmse/mae
-3. Visual comparison plots using matplotlib/seaborn
-4. Configurable training time per framework
-5. Add regression task support with RMSE, MAE, R² (in progress)
-6. Add hyperparameter tuning comparison
-7. Use logging module instead of print statements (--verbose flag)
-8. Generate bar charts for leaderboard comparison
-
-### Commands
+### Terminal Commands
 1. python main.py --frameworks autogluon h2o --data "C:/Users/Vaishnavi B/OneDrive/Desktop/AutoML/automl-pipeline-comparator/data/mydataset.csv" --target Survived
 2. python main.py --data data/mydataset.csv --target Survived--frameworks autogluon h2o --time_limit 300 --ag_preset best --ag_hpo --save_models
 
