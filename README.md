@@ -1,10 +1,9 @@
-🤖 AutoML Pipeline Comparator (Universal CLI Tool)
+## The AutoML Pipeline Comparator
 A Python-based command-line tool to train, compare, and benchmark multiple AutoML frameworks (currently AutoGluon and H2O.ai) on your datasets — all from a single terminal command.
 Designed for data scientists, ML engineers, and researchers who want a quick, reproducible, and standardized way to evaluate AutoML frameworks without switching environments, rewriting code, or manually comparing results.
 
 
-📌 Project Overview
-## The AutoML Pipeline Comparator:
+### Project Overview
 1. Runs multiple AutoML frameworks sequentially on the same dataset.
 2. Detects problem type automatically (classification or regression).
 3. Computes standardized evaluation metrics:
@@ -16,15 +15,15 @@ Regression: RMSE, MAE, R²
 7. Allows easy extension for future frameworks.
 
 
-🎯 Why Use This Tool
-## Real-world ML often requires comparing multiple AutoML frameworks to determine:
+### Why Use This Tool
+###### Real-world ML often requires comparing multiple AutoML frameworks to determine:
 Which framework works best for small vs large datasets.
 How performance changes with different presets or hyperparameter tuning.
 Which approach is reproducible and reliable under time constraints.
 This tool automates these comparisons and produces a clear leaderboard, saving hours of manual work.
 
 
-🚀 Features
+### Features
 1. Multi-framework support — AutoGluon, H2O.ai (more coming soon: TPOT, Auto-sklearn, FLAML)
 2. Universal task support — Classification & Regression
 3. Automatic problem detection
@@ -43,7 +42,7 @@ Hyperparameter tuning (--ag_hpo)
 Model saving
 Regression metric support
 
-
+### Tool / Library 
 | Tool / Library   | Purpose                                               |
 | ---------------- | ----------------------------------------------------- |
 | **Python 3.x**   | Core programming language                             |
@@ -56,20 +55,22 @@ Regression metric support
 | **CSV**          | Persistent benchmark results                          |
 
 
-📌 Future Enhancements
-Add more frameworks: TPOT, Auto-sklearn, FLAML
-Support more metrics via --metric accuracy/f1/auc/rmse/mae
-Visual comparison plots using matplotlib/seaborn
-Configurable training time per framework
-Add regression task support with RMSE, MAE, R² (in progress)
-Add hyperparameter tuning comparison
-Use logging module instead of print statements (--verbose flag)
-Generate bar charts for leaderboard comparison
+### Future Enhancements
+1. Add more frameworks: TPOT, Auto-sklearn, FLAML
+2. Support more metrics via --metric accuracy/f1/auc/rmse/mae
+3. Visual comparison plots using matplotlib/seaborn
+4. Configurable training time per framework
+5. Add regression task support with RMSE, MAE, R² (in progress)
+6. Add hyperparameter tuning comparison
+7. Use logging module instead of print statements (--verbose flag)
+8. Generate bar charts for leaderboard comparison
 
 
-##### python main.py --leaderboard
-##### python main.py --frameworks autogluon h2o --data "C:/Users/Vaishnavi B/OneDrive/Desktop/AutoML/automl-pipeline-comparator/data/mydataset.csv" --target Survived
-#####  python main.py --data data/mydataset.csv --target Survived--frameworks autogluon h2o --time_limit 300 --ag_preset best --ag_hpo --save_models
+1. python main.py --frameworks autogluon h2o --data "C:/Users/Vaishnavi B/OneDrive/Desktop/AutoML/automl-pipeline-comparator/data/mydataset.csv" --target Survived
+2. python main.py --data data/mydataset.csv --target Survived--frameworks autogluon h2o --time_limit 300 --ag_preset best --ag_hpo --save_models
+
+
+
 1. Train Models
 python main.py --train path/to/train.csv --label target_column --frameworks autogluon h2o --time_limit 300
 2. Show Leaderboard
