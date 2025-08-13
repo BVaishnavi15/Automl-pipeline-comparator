@@ -7,7 +7,7 @@ Designed for data scientists, ML engineers, and researchers who want a quick, re
 1. Runs multiple AutoML frameworks sequentially on the same dataset.
 2. Detects problem type automatically (classification or regression).
 3. Computes standardized evaluation metrics:
-Classification: Accuracy, Weighted F1-score, AUC
+Classification: Accuracy, Weighted F1-score, AUC;
 Regression: RMSE, MAE, R²
 4. Logs results into a single CSV leaderboard (results.csv) with timestamps & metadata.
 5. Handles rare-class splits without crashes.
@@ -32,7 +32,7 @@ This tool automates comparisons and produces a clear leaderboard, saving hours o
 7. Leaderboard mode — View ranked results from all runs
 8. Results logging — Saves runs to results.csv for tracking over time
 9. Optimized execution:
-No temp files for AutoGluon (uses in-memory DataFrames)
+No temp files for AutoGluon (uses in-memory DataFrames),
 Avoids repeated startup/shutdown for H2O.ai
 10. Plug-and-play architecture — Easily add more frameworks
 11. Parallel execution support
@@ -41,7 +41,7 @@ Hyperparameter tuning (--ag_hpo)
 Model saving
 Regression metric support
 
-### Tool / Library 
+### Technologies Used
 | Tool / Library   | Purpose                                               |
 | ---------------- | ----------------------------------------------------- |
 | **Python 3.x**   | Core programming language                             |
@@ -54,9 +54,19 @@ Regression metric support
 | **CSV**          | Persistent benchmark results                          |
 
 
-### Terminal Commands
+### Terminal Commands Usage
+1. python main.py --data data/train.csv --target target_column--frameworks autogluon h2o --time_limit 300--ag_preset best --ag_hpo--save_models
+###### --data: Path to dataset CSV
+###### --target: Target/label column
+###### --frameworks: Space-separated frameworks to run (default: all supported)
+###### --time_limit: Seconds per framework
+###### --ag_preset: AutoGluon preset (extreme|best|high|good|medium)
+###### --ag_hpo: Enable AutoGluon hyperparameter tuning
+###### --save_models: Save model artifacts to disk
+
 1. python main.py --frameworks autogluon h2o --data "C:/Users/Vaishnavi B/OneDrive/Desktop/AutoML/automl-pipeline-comparator/data/mydataset.csv" --target Survived
 2. python main.py --data data/mydataset.csv --target Survived--frameworks autogluon h2o --time_limit 300 --ag_preset best --ag_hpo --save_models
+3. python main.py --frameworks autogluon h2o --data "C:/Users/Vaishnavi B/OneDrive/Desktop/AutoML/automl-pipeline-comparator/data/newdata.csv" --target "Caloires Required"
 
 
 
