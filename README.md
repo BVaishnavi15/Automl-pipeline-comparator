@@ -65,8 +65,8 @@ Regression metric support
 ###### --save_models: Save model artifacts to disk
 
 1. python main.py --frameworks autogluon h2o --data "C:/Users/Vaishnavi B/OneDrive/Desktop/AutoML/automl-pipeline-comparator/data/mydataset.csv" --target Survived
-2. python main.py --data data/mydataset.csv --target Survived--frameworks autogluon h2o --time_limit 300 --ag_preset best --ag_hpo --save_models
-3. python main.py --frameworks autogluon h2o --data "C:/Users/Vaishnavi B/OneDrive/Desktop/AutoML/automl-pipeline-comparator/data/newdata.csv" --target "Caloires Required"
+
+2. python main.py --frameworks autogluon h2o --data "C:/Users/Vaishnavi B/OneDrive/Desktop/AutoML/automl-pipeline-comparator/data/newdata.csv" --target "Caloires Required"
 
 
 
